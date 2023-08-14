@@ -2,16 +2,8 @@ export default function Home() {
   return (
     <main className="index">
       <section className="hero">
-        <div className="content fix-width flex-h">
-          <div className="head">
-            <h1>خدمـــــات طراحــــی سایت و اپلیکیشن</h1>
-            <p>همین حالا سفــارش خود را ثــبــت کنــید</p>
-            <a href="#" className="btn btn-white">
-              درخواست مشاوره رایگان
-            </a>
-          </div>
-
-          <img className="vector" src="/img/hero-vector.svg" alt="پرایم تیم" />
+        <div className="fix-width flex-v">
+          <img src="/img/hero.svg" alt="پرایم تیم" />
         </div>
       </section>
 
@@ -40,7 +32,14 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services-all"></section>
+      {/* <section className="services-all">
+        <div className="head">
+          <h1>خدمات پرایم تیم</h1>
+          <div className="line">
+            <div className="inner"></div>
+          </div>
+        </div>
+      </section> */}
     </main>
   );
 }

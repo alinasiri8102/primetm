@@ -27,36 +27,12 @@
   .hero {
     position: relative;
     width: 100vw;
-    height: 650px;
     background: linear-gradient(200deg, $pr-color 0%, darken($pr-color, 15) 100%);
-
-    .content {
-      height: 100%;
-      gap: 100px;
-      justify-content: center;
-
-      .head {
-        margin-top: 50px;
-        width: 300px;
-        min-width: 300px;
-        h1,
-        p {
-          line-height: 4rem;
-
-          color: white;
-          text-align: center;
-          font-size: 2.5rem;
-        }
-        .btn {
-          margin-top: 20px;
-          line-height: 32px;
-        }
-      }
-
-      .vector {
-        max-width: 700px;
-        align-self: flex-end;
-      }
+    justify-content: flex-end;
+    img {
+      margin-top: 150px;
+      margin-bottom: -3px;
+      width: 100%;
     }
   }
 
