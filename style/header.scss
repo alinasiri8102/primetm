@@ -1,0 +1,27 @@
+header {
+  position: absolute;
+  top: 20px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 10;
+  h1,
+  a {
+    color: $white-color;
+    padding: 5px 0;
+  }
+  .box {
+    padding: 5px 10px !important;
+    border: 1px solid rgba($color: white, $alpha: 0.3);
+    border-radius: 15px;
+    background: linear-gradient(47deg, rgba(255, 255, 255, 0.15) 0%, rgba(0, 33, 82, 0.15) 100%);
+    box-shadow: 0 0 30px rgba($color: black, $alpha: 0.1);
+    justify-content: space-between;
+    .right {
+      gap: 50px;
+
+      .nav {
+        gap: 50px;
+      }
+    }
+  }
+}

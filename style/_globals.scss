@@ -1,0 +1,122 @@
+$white-color: #ffffff;
+$pr-color: #7e2bc0;
+$sc-color: #ffe9ff;
+$pr-light-color: lighten($pr-color, 48);
+$pr-dark-color: darken($pr-color, 10);
+
+@import "./typo";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  z-index: 1;
+  &::selection {
+    background-color: $pr-color;
+    color: $white-color;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $pr-color;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  object-fit: cover;
+  overflow: hidden;
+  min-width: 300px;
+}
+
+html,
+body {
+  background-color: $white-color;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+section {
+  padding: 0 20px;
+}
+
+.pr-color {
+  color: $pr-color;
+}
+
+.site-wrapper {
+  padding: 0 20px;
+}
+
+.fix-width {
+  padding: 0px 30px;
+  margin: 0 auto;
+  width: 100vw;
+  max-width: 1280px;
+  @media screen and (max-width: 480px) {
+    padding: 0px 20px;
+  }
+  @media screen and (max-height: 480px) {
+    padding: 0px 40px;
+  }
+}
+
+.flex-h {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.flex-v {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button,
+.btn {
+  border: none;
+  background-color: unset;
+  border-radius: 8px;
+  min-width: max-content;
+  padding: 6px 15px !important;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  color: $white-color;
+  line-height: 22px;
+
+  &:disabled,
+  &[disabled] {
+    opacity: 0.7;
+    cursor: pointer;
+  }
+}
+
+.btn-pr {
+  background-color: $pr-dark-color;
+  color: $white-color;
+}
+
+.btn-sc {
+  background-color: $sc-color;
+  color: $pr-color;
+}
+
+.btn-white {
+  background-color: $white-color;
+  color: $pr-dark-color;
+}
+@import "./header";
+@import "./index";

@@ -1,0 +1,77 @@
+.index {
+  .head {
+    width: max-content;
+    position: relative;
+    margin-bottom: 40px;
+    h1 {
+      color: $pr-dark-color;
+    }
+    .line {
+      position: absolute;
+      width: 100vw;
+      bottom: -10px;
+      left: 0;
+      height: 6px;
+      border-radius: 5px 0px 0px 5px;
+      background-color: $sc-color;
+      .inner {
+        width: 50px;
+        height: 6px;
+        background-color: $pr-color;
+        position: absolute;
+        left: 0;
+        border-radius: 5px;
+      }
+    }
+  }
+  .hero {
+    position: relative;
+    width: 100vw;
+    height: 650px;
+    background: linear-gradient(200deg, $pr-color 0%, darken($pr-color, 15) 100%);
+
+    .content {
+      height: 100%;
+      gap: 100px;
+      justify-content: center;
+
+      .head {
+        margin-top: 50px;
+        width: 300px;
+        min-width: 300px;
+        h1,
+        p {
+          line-height: 4rem;
+
+          color: white;
+          text-align: center;
+          font-size: 2.5rem;
+        }
+        .btn {
+          margin-top: 20px;
+          line-height: 32px;
+        }
+      }
+
+      .vector {
+        max-width: 700px;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  .services-web {
+    padding: 50px 0;
+    background-color: #f5f5f5;
+    .content {
+      gap: 50px;
+      justify-content: space-between;
+      .right {
+        max-width: 650px;
+      }
+    }
+  }
+
+  .services-all {
+  }
+}
