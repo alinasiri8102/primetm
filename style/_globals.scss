@@ -29,7 +29,8 @@ ul {
 img {
   object-fit: cover;
   overflow: hidden;
-  min-width: 300px;
+  width: 100%;
+  min-width: 200px;
 }
 
 html,
@@ -49,12 +50,8 @@ body {
   color: $pr-color;
 }
 
-.site-wrapper {
-  padding: 0 20px;
-}
-
 .fix-width {
-  padding: 0px 30px;
+  padding: 0px 20px;
   margin: 0 auto;
   width: 100vw;
   max-width: 1280px;

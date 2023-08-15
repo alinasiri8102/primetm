@@ -24,6 +24,11 @@
       }
     }
   }
+  .content {
+    padding: 50px 0;
+    justify-content: space-between;
+  }
+
   .hero {
     position: relative;
     width: 100vw;
@@ -37,17 +42,27 @@
   }
 
   .services-web {
-    padding: 50px 0;
     background-color: #f5f5f5;
     .content {
       gap: 50px;
-      justify-content: space-between;
       .right {
         max-width: 650px;
+        min-width: 300px;
       }
     }
   }
 
   .services-all {
+    .imgs {
+      margin-top: 30px;
+      gap: 20px;
+      display: grid;
+      grid-auto-flow: row;
+      grid-template-columns: repeat(4, 1fr);
+      img {
+        width: 100%;
+        min-width: 100px;
+      }
+    }
   }
 }
