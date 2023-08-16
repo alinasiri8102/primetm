@@ -30,7 +30,6 @@ img {
   object-fit: cover;
   overflow: hidden;
   width: 100%;
-  min-width: 100px;
 }
 
 html,
@@ -56,10 +55,7 @@ body {
   width: 100vw;
   max-width: 1280px;
   @media screen and (max-width: 480px) {
-    padding: 0px 20px;
-  }
-  @media screen and (max-height: 480px) {
-    padding: 0px 40px;
+    padding: 0px 10px;
   }
 }
 
@@ -113,4 +109,5 @@ button,
   color: $pr-dark-color;
 }
 @import "./header";
+@import "./footer";
 @import "./index";

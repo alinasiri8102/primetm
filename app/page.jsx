@@ -10,26 +10,28 @@ export default function Home() {
 
       <section className="services-web">
         <div className="fix-width">
-          <div className="content flex-h">
-            <div className="right">
-              <div className="head">
-                <h1>خدمات طراحی سایت</h1>
-                <div className="line">
-                  <div className="inner"></div>
-                </div>
-              </div>
-              <div className="description">
-                <strong>به بهترین شکل میزبان مخاطبان خود باشید :)</strong>
-                <p>
-                  طراحی سایت یکی از اصولی‌ترین و حیاتی‌ترین عوامل در موفقیت هر کسب و کار آنلاین است. طراحی سایت حرفه‌ای
-                  و جذاب، کلید موفقیت آنلاین شما. با تیم حرفه‌ای و تجربه‌دار، سایتی زیبا و کاربرپسند را برای کسب و کار
-                  شما طراحی میکنیم.
-                </p>
+          <div className="content">
+            <div className="head">
+              <h1>خدمات طراحی سایت</h1>
+              <div className="line">
+                <div className="inner"></div>
               </div>
             </div>
+            <div className="flex-h">
+              <div className="right">
+                <div className="description">
+                  <strong>به بهترین شکل میزبان مخاطبان خود باشید :)</strong>
+                  <p>
+                    طراحی سایت یکی از اصولی‌ترین و حیاتی‌ترین عوامل در موفقیت هر کسب و کار آنلاین است. طراحی سایت
+                    حرفه‌ای و جذاب، کلید موفقیت آنلاین شما. با تیم حرفه‌ای و تجربه‌دار، سایتی زیبا و کاربرپسند را برای
+                    کسب و کار شما طراحی میکنیم.
+                  </p>
+                </div>
+              </div>
 
-            <div className="left">
-              <img src="/img/services.svg" alt="خدمات پرایم تیم" />
+              <div className="left">
+                <img src="/img/services.svg" alt="خدمات پرایم تیم" />
+              </div>
             </div>
           </div>
         </div>
@@ -131,6 +133,41 @@ export default function Home() {
 
             <div className="slider">
               <Slider />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact">
+        <div className="fix-width">
+          <div className="content">
+            <div className="head">
+              <h1>مشاوره رایگان</h1>
+              <div className="line">
+                <div className="inner"></div>
+              </div>
+            </div>
+            <div className="flex-h">
+              <div className="right">
+                <img src="/img/contact.svg" alt="" />
+              </div>
+
+              <div className="left">
+                <form className="flex-v">
+                  <h1>فرم درخواست مشاوره</h1>
+                  <hr />
+                  <div className="row row1 flex-h">
+                    <input className="name" type="text" placeholder="نام" />
+                    <input type="text" placeholder="نام خانوادگی" />
+                  </div>
+                  <div className="row row2 flex-h">
+                    <input className="phone" type="text" placeholder="شماره تماس" />
+                    <input type="text" placeholder="ایمیل" />
+                  </div>
+                  <textarea resize="none" cols="30" rows="10" placeholder="متن"></textarea>
+                  <input type="submit" className="btn" value="ارسال" />
+                </form>
+              </div>
             </div>
           </div>
         </div>

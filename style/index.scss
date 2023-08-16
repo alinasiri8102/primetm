@@ -24,30 +24,36 @@
       }
     }
   }
+
   .content {
     padding: 50px 0;
     justify-content: space-between;
   }
 
+  .services-web,
+  .why,
+  .contact {
+    background-color: #f5f5f5;
+  }
+
   .hero {
     position: relative;
-    width: 100vw;
     background: linear-gradient(200deg, $pr-color 0%, darken($pr-color, 15) 100%);
-    justify-content: flex-end;
     img {
       margin-top: 150px;
       margin-bottom: -3px;
-      width: 100%;
     }
   }
 
   .services-web {
-    background-color: #f5f5f5;
     .content {
-      gap: 50px;
-      .right {
-        max-width: 650px;
-        min-width: 300px;
+      .flex-h {
+        gap: 50px;
+        justify-content: space-between;
+        .right {
+          max-width: 750px;
+          min-width: 300px;
+        }
       }
     }
   }
@@ -59,22 +65,17 @@
       display: grid;
       grid-auto-flow: row;
       grid-template-columns: repeat(4, 1fr);
-      img {
-        width: 100%;
-        min-width: 100px;
-      }
     }
   }
 
   .why {
-    background-color: #f5f5f5;
-
     .boxs {
       margin-top: 30px;
       display: grid;
       gap: 20px;
       grid-template-columns: repeat(4, 1fr);
       .box {
+        border-bottom: 3px solid $pr-dark-color;
         gap: 20px;
         width: 100%;
         height: 100%;
@@ -82,42 +83,88 @@
         padding: 20px;
         background-color: $sc-color;
         border-radius: 8px;
-
         img {
           width: auto;
           height: 200px;
         }
-        h3 {
-          color: $pr-dark-color;
+      }
+    }
+  }
+
+  .portfolio {
+    .slider {
+      .img {
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: contain; /* Resize the background image to cover the entire container */
+      }
+      .slick-list {
+        margin: 0 0px;
+      }
+      .slick-slide {
+        transition: all 0.3s;
+        scale: 0.9;
+      }
+      .slick-center {
+        scale: 1;
+      }
+      .slick-arrow {
+        z-index: 100;
+        scale: 1.5;
+        &::before {
+          opacity: 1;
+          color: $pr-color;
         }
       }
     }
   }
-}
 
-.portfolio {
-  .slider {
-    .img {
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
-      background-size: contain; /* Resize the background image to cover the entire container */
-    }
-    .slick-list {
-      margin: 0 0px;
-    }
-    .slick-slide {
-      transition: all 0.3s;
-      scale: 0.9;
-    }
-    .slick-center {
-      scale: 1;
-    }
-    .slick-arrow {
-      z-index: 100;
-      scale: 1.5;
-      &::before {
-        opacity: 1;
-        color: $pr-color;
+  .contact {
+    .content {
+      .flex-h {
+        justify-content: center;
+        form {
+          min-width: 500px;
+          gap: 10px;
+          margin-right: 50px;
+          border-radius: 8px;
+          border: 5px solid $sc-color;
+          padding: 20px;
+          background-color: $white-color;
+          h1 {
+            text-align: center;
+          }
+          hr {
+            border: none;
+            height: 1px;
+            background-color: $pr-color;
+            margin-bottom: 10px;
+          }
+          input,
+          textarea {
+            max-height: 130px;
+            width: 100%;
+            font-family: inherit;
+            border-radius: 10px;
+            box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.15) inset;
+            border: none;
+            padding: 8px;
+            background-color: $sc-color;
+            resize: none;
+          }
+          .row {
+            gap: 10px;
+          }
+          .btn {
+            background-color: $pr-color;
+          }
+          .name {
+            width: 80%;
+          }
+          .phone {
+            width: 60%;
+          }
+        }
       }
     }
   }
