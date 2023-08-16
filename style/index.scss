@@ -150,7 +150,12 @@
             border: none;
             padding: 8px;
             background-color: $sc-color;
+            border: 1px solid transparent;
             resize: none;
+            &:focus {
+              outline: none !important;
+              border: 1px solid $pr-color;
+            }
           }
           .row {
             gap: 10px;
