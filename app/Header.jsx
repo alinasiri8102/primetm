@@ -9,15 +9,14 @@ const Header = () => {
             </a>
           </div>
           <nav className="nav flex-h">
-            <a href="#">خدمات</a>
-            <a href="#">نمونه کار</a>
-            <a href="#">تماس با ما</a>
-            <a href="#">درباره ما</a>
+            <a href="#services-web">طراحی سایت</a>
+            <a href="#services-all">خدمات</a>
+            <a href="#portfolio">نمونه کار</a>
           </nav>
         </div>
         <div className="left">
-          <a href="#" className="btn btn-sc">
-            درخواست مشاوره
+          <a href="#contact" className="btn btn-sc">
+            تماس با ما
           </a>
         </div>
       </div>

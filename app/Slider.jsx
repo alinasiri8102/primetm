@@ -13,7 +13,8 @@ export default class mySlider extends Component {
     ];
     var settings = {
       className: "center",
-      dots: false,
+      arrows: false,
+      dots: true,
       infinite: true,
       speed: 600,
       centerMode: true,

@@ -8,7 +8,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services-web">
+      <section id="services-web" className="services-web">
         <div className="fix-width">
           <div className="content">
             <div className="head">
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="services-all">
+      <section id="services-all" className="services-all">
         <div className="fix-width">
           <div className="content flex-v">
             <div className="head">
@@ -121,7 +121,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="portfolio">
+      <section id="portfolio" className="portfolio">
         <div className="fix-width">
           <div className="content flex-v">
             <div className="head">
@@ -138,7 +138,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="contact">
+      <section id="contact" className="contact">
         <div className="fix-width">
           <div className="content">
             <div className="head">
