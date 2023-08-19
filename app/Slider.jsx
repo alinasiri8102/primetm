@@ -7,9 +7,10 @@ export default class mySlider extends Component {
     const portfolios = [
       "/img/portfolio1.png",
       "/img/portfolio2.png",
-      "/img/portfolio5.png",
+      "/img/portfolio3.png",
       "/img/portfolio1.png",
-      "/img/portfolio5.png",
+      "/img/portfolio2.png",
+      "/img/portfolio3.png",
     ];
     var settings = {
       className: "center",
