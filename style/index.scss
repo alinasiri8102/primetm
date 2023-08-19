@@ -133,17 +133,17 @@
           border: 5px solid $sc-color;
         }
       }
-      .slick-arrow {
-        z-index: 100;
-        scale: 1.5;
-        &::before {
-          opacity: 1;
-          color: $pr-color;
-        }
-      }
       .slick-dots {
         button::before {
           color: $pr-color;
+        }
+        button:focus:before {
+          opacity: 0.25;
+        }
+        .slick-active {
+          button:before {
+            opacity: 1;
+          }
         }
       }
     }
